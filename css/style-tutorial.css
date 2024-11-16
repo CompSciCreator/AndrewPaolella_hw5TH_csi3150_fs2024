@@ -1,0 +1,98 @@
+/*
+    this is a comment in .css file
+    syntax is the general property:
+
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif; /*will show later how to integrate google fonts */
+  /* How to use and declare CSS variables */
+  --pimary-background-color: #def2c8;
+}
+
+body {
+  background-image: url("https://"); /* http:// or ../ for file path */
+  background-repeat: no-repeat;
+  background-size: cover; /* can use contain or cover */
+  background-color: rgb(216, 219, 255);
+}
+
+#primary-heading {
+  color: var(--pimary-background-color);
+  border: 20px;
+  border-radius: 10px;
+  padding: 15;
+  margin: 50;
+}
+
+.heading-group {
+}
+
+/* tutorial for laying elements out on the html document. 
+replicating the news section on the oakland webpage */
+
+/*root node of the section */
+
+.New-events {
+  padding: 10px;
+}
+
+/* immediate child of root node */
+
+.section-title {
+  padding: 10px;
+  margin-bottom: 20px; /*seperation next child vertically from this one*/
+  width: 100%; /*max-width, min-width. Same from height property*/
+}
+
+.section-title-text {
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: rgb(255, 238, 0);
+}
+
+.media-wrapper {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* space around, space between, space evenly*/
+  align-items: center;
+  flex-wrap: wrap; /* if you run out of space on the page it will go to next line */
+  /*flex-grow: and flex-shrink*/
+}
+
+.news-container {
+  border: 1px solid rgb(160, 213, 54);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.news-media {
+  padding: 15px;
+  margin-bottom: 30px;
+  width: 150px;
+  max-width: 100px;
+  height: 50px;
+  max-height: 100px;
+}
+
+.news-images {
+  /* need to fix the size and content fit*/
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+}
+
+.news-text > a > h3 {
+  padding: 10px;
+  color: rgb(255, 208, 0);
+  font-size: 18px;
+  font-weight: 300;
+}

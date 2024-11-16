@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AP Motors | Buy & Finance Used Cars </title>
+
+    <!-- import JS here -->
+
+    <script src="./js/index.js" type="module" defer></script>
+    <!-- NOTE: When exporting files into another, make sure to define the script type as a module! -->
+
+    <!-- import css styling here -->
+    <link rel="stylesheet" href="./css/styles.css"">
+    <!-- import for favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.ico" />
+    <!-- import for boxicons -->
+    <link href="" rel="stylesheet" />
+  </head>
+  <!-- end of head section -->
+  <!-- start of body -->
+  <body>
+    <!-- start of header section -->
+    <header class="header">
+      <img class="header" src="./assets/img/logo2.png" alt="logo placeholder" />
+      <h1>AP Motors</h1>
+      <!-- start of navbar -->
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="#">Search Cars</a>
+          </li>
+          <li>
+            <a href="#">Sell/Trade</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- end of navbar -->
+    </header>
+    <!-- end of header section -->
+    <!-- Start of main -->
+    <main>
+      <!-- start of hero section -->
+      <div class="hero-content">
+        <div>
+          <div>
+            <section class="hero">
+              <div>
+                <h2 class="hero-title">Welcome back</h2>
+              </div>
+              <form action="#" method="post">
+                <input
+                  type="search"
+                  name="user-search"
+                  id="user-search"
+                  placeholder="Search Make, Model or Keyword"
+                />
+                <button disabled="disabled">GO</button>
+              </form>
+            </section>
+          </div>
+        </div>
+      </div>
+      <!-- end of hero section -->
+      <!-- filter section starts here -->
+      <div class="filter-section">
+        <div>
+          <form id="filterForm"></form>
+          <div>
+            <label for="minPrice">Minimum Price:</label>
+            <input type="number" id="minPrice" value="0" />
+          </div>
+          <div>
+            <label for="maxPrice">Maximum Price:</label>
+            <input type="number" id="maxPrice" value="1000000" />
+          </div>
+          <div>
+            <label for="yearFilter">Model Year: </label>
+            <select id="yearFilter">
+              <option value="allYears">All</option>
+              <option value="2008">2008</option>
+              <option value="2009">2009</option>
+              <option value="2010">2010</option>
+              <option value="2011">2011</option>
+              <option value="2012">2012</option>
+              <option value="2013">2013</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+            </select>
+          </div>
+          <div>
+            <label for="manufacturerFilter">Manufacturer: </label>
+            <select id="manufacturerFilter">
+              <option value="allManufacturers">All</option>
+              <option value="BMW">BMW</option>
+              <option value="Cadillac">Cadillac</option>
+              <option value="Chevrolet">Chevrolet</option>
+              <option value="Dodge">Dodge</option>
+              <option value="Ford">Ford</option>
+              <option value="Honda">Honda</option>
+              <option value="Hyundai">Hyundai</option>
+              <option value="Kia">Kia</option>
+              <option value="Lexus">Lexus</option>
+              <option value="Mazda">Mazda</option>
+              <option value="Nissan">Nissan</option>
+              <option value="Pontiac">Pontiac</option>
+              <option value="Porsche">Porsche</option>
+              <option value="Subaru">Subaru</option>
+              <option value="Toyota">Toyota</option>
+              <option value="Volkswagen">Volkswagen</option>
+            </select>
+          </div>
+          <div>
+            <label for="colorFilter">Color: </label>
+            <select id="colorFilter">
+              <option value="allColors">All</option>
+              <option value="Black">Black</option>
+              <option value="White">White</option>
+              <option value="Gray">Gray</option>
+              <option value="Silver">Silver</option>
+              <option value="Red">Red</option>
+              <option value="Blue">Blue</option>
+              <option value="Green">Green</option>
+            </select>
+          </div>
+          <div>
+            <label for="maxMileage">Maximum Mileage:</label>
+            <input type="number" id="maxMileage" value="0" />
+          </div>
+          <div>
+            <!-- reset and apply filter buttons -->
+            <button type="button" id="filterBtn">Apply</button>
+            <button type="button" id="resetBtn">Reset</button>
+          </div>
+        </div>
+      </div>
+      <!-- end of filter section -->
+
+      <!-- start of container for each card, dynamically loaded in JS  -->
+      <br />
+      <div id="car-container" class="car-container"></div>
+    </main>
+    <!-- end of main -->
+  </body>
+  <!-- end of body -->
+</html>
